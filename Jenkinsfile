@@ -25,7 +25,7 @@ pipeline {
         echo "Install railflow"
         sh "npm install railflow"
         echo "Begin exporting data to TestRail"
-        sh sh 'railflow -k ${RAILFLOW_KEY} -url ${TESTRAIL_URL} -u ${TESTRAIL_CREDS_USR} -p ${TESTRAIL_CREDS_PSW} -pr \"Railflow Demo\" -path Railflow/Demo/JUnit -f junit -r "target/surefilre-reports/*.xml" -sm path -tp "Railflow Demo JUnit" -cf \"Required text field=something\"'
+        sh 'railflow -k ${RAILFLOW_KEY} -url ${TESTRAIL_URL} -u ${TESTRAIL_CREDS_USR} -p ${TESTRAIL_CREDS_PSW} -pr \"Railflow Demo\" -path Railflow/Demo/JUnit -f junit -r "target/surefilre-reports/*.xml" -sm path -tp "Railflow Demo JUnit" -cf \"Required text field=something\"'
      }  
     }
 }
