@@ -6,7 +6,7 @@ pipeline {
         maven 'M3' 
     }
      environment {
-        RAILFLOW_KEY = credentials('railflow-key')
+        RAILFLOW_KEY = credentials('railflow-free-key')
         TESTRAIL_CREDS = credentials('sergey-testrail')
         TESTRAIL_URL = "https://tr.railflow.io/"        
      }
