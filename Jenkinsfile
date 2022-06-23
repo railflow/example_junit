@@ -15,7 +15,7 @@ pipeline {
           steps {   
              echo '********BUILD STEP**********'
              git branch: 'main', url: 'https://github.com/railflow/example_junit.git'
-             bat 'mvn test'
+             sh 'mvn test'
           }
        }
     }
